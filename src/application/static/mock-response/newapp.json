@@ -1,0 +1,154 @@
+{
+    "ParameterList":[
+        "Engagement",
+        "Events",
+        "Location",
+        "App Version",
+        "Competitors",
+        "Device",
+        "Network",
+        "Storage space",
+        "Performance",
+        "Crashes"  
+    ],
+  "device": [
+   "moto g", 
+    "nokia lumia", 
+    "nexus 4", 
+    "nexus 5", 
+    "samsung duos", 
+    "samsung galaxy", 
+    "moto x"
+    
+  ],
+  "Ram":[
+    "128",
+    "256",
+    "512",
+    "768",
+    "2048",
+    "3096"
+    ],
+  "screen":[
+    "320x526",
+    "768x320",
+    "450x526",
+    "1268x738",
+    "1350x1024"
+    
+    ],
+    "screendenisty":[
+       "200X500", 
+        "300X700", 
+        "400X700"
+    
+    ],
+   "aspectratio": [
+    "hdpi", 
+    "ldpi", 
+    "mdpi"
+    ],
+  
+    "networkVal":[
+    "WiFi",
+    "4G",
+    "3G",
+    "2G"
+    
+    ],
+    "osVersion":[
+        "Gingerbread (2.3-2.3.7)",
+        "Honeycomb (3.0-3.2.6)",
+        "Ice Cream Sandwich (4.0-4.0.4)",
+        "Jelly Bean (4.1-4.3.1)",
+        "KitKat (4.4-4.4.4)",
+        "Lollipop (5.0)"
+    ],
+    "countries":[
+           "England", 
+            "USA", 
+            "India", 
+            "France", 
+            "China", 
+            "Germany", 
+            "Japan"
+ ],
+    "states":[
+        "Beijing", 
+        "Tokyo", 
+        "Mumbai", 
+        "Paris", 
+        "Delhi", 
+        "New York", 
+        "California", 
+        "Hamburg", 
+        "Kolkata", 
+        "London", 
+        "Bangalore",
+       "Louisiana"
+    
+    ],
+    "events":[
+        "events data1",
+        "events data2",
+        "search", 
+        "buy", 
+        "logout", 
+        "login", 
+        "checkout", 
+        "select_product", 
+        "select_size"
+        
+    ],
+    "networkcareer":[
+    "BSNL", 
+    "Airtel", 
+    "Tata Docomo", 
+    "Idea"  
+    ],
+
+    "session_duration":["10", "60","120","180","240","300","3600","360","420","480","540","1000","600"],
+    
+    "spaceleft":
+        ["250 MB","100 MB", "124 MB", "520 MB","200 MB"],
+
+    "push_notification":[1,3,5,3],
+
+    "ANR":[1,3,2,5,4,5,6,10,15,12,18,20,22,25,30,40,50],
+
+    "memory":["100 MB", "1024 MB", "500 MB","200 MB"],
+
+    "FB params":[
+        {"key1" : "value1", "key2" : "value2", "key3" : "value3"},
+        {"key5" : "value5", "key2" : "value21", "key4" : "value4"},
+        {"key5" : "value1", "key1" : "value21", "key4" : "value4"}
+    ],
+    
+    "crashes":[
+        "Null Pointer Exceptions",
+        "Memmory leaks",
+        "Other Exception",
+        "crash report 3",
+        "crash report 4"
+    ],
+    "uninstall":[
+        "true",
+        "false"],
+
+    "competitors":[
+
+         "MakeMyTrip",
+         "Yatra.com",
+         "Paytm",
+         "redBus",
+         "hike", 
+         "Facebook",
+         "moneycontrol", 
+         "CouponDunia",
+         "Freecharge",
+         "OLX", 
+         "Cricbuzz",
+         "WhatsApp",
+         "Snapdeal"
+        ]
+}

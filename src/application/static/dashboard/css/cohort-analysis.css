@@ -1,0 +1,92 @@
+rect.bordered {
+        stroke: #E6E6E6;
+        stroke-width:0.5;   
+      }
+
+      rect.border {
+        stroke: #808080;
+        stroke-width:1px;   
+      }
+
+      /*rect.bor {
+        stroke:#170000; 
+        stroke: #E6E6E6;
+        stroke-width:1px;   
+      }*/
+
+      text.mono {
+        font-size: 9pt;
+        /*font-family: Consolas, courier;*/
+        font-family: Arial, Helvetica, sans-serif;
+        /*font-family: 'Tangerine', serif;*/
+        fill: "black"
+      }
+   
+      .drop-down{
+        height: 30px;
+        width: 170px;
+        /*background: blue;*/
+        display: inline-block;
+        position:relative;
+        margin: 0 auto;
+        padding: 5px;
+        border: 2px;
+        float:left;
+      }
+
+      #startdatepicker,#enddatepicker{
+        height: 30px;
+        width: 140px;
+        background: #E4E4E8;
+        /*display: inline-block;*/
+        position:relative;
+        margin: 0 auto;
+        padding: 5px;
+        border: 2px;
+        float:left;
+        
+      }
+
+      .drop-down2{
+        height: 30px;
+        width: 130px;
+        /*background: blue;*/
+        display: inline-block;
+        position:relative;
+        margin: 0 auto;
+        padding: 5px;
+        border: 2px;
+        float:left;
+      }
+
+      .drop-down3{
+        height: 30px;
+        width: 260px;
+        /*background: blue;*/
+        display: inline-block;
+        position:relative;
+        margin: 0 auto;
+        padding: 5px;
+        border: 2px;
+        float:left;
+      }
+ 
+      #select-list,#select-list2{
+        height: 30px;
+        width: 100px;
+        background: #E4E4E8;
+        /*display: inline-block;*/
+        position:relative;
+        margin: 0 auto;
+        padding: 5px;
+        border: 2px;
+        float:left;
+        
+      }
+
+       
+
+      #startdatepicker,#enddatepicker{
+        background: #E4E4E8 url("http://jqueryui.com/resources/demos/datepicker/images/calendar.gif") right no-repeat;
+        /*padding-right: 15px; */
+      }

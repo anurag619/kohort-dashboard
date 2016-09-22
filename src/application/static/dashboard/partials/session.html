@@ -1,0 +1,100 @@
+	
+<h1><i class="fa fa-pie-chart fa-lg"></i> Analytics</h1>
+<div class="alert alert-danger" ng-show="api_error"  id="success-alert-btn">
+                     
+Error in Loading Data
+</div>                
+
+<div class='option-body pull-lef col-lg-9 col-md-9'>
+	<div class="row">
+	<span ng-click='anotherquery("loyal")' ng-class="{'active': show_session == true }" class=""><i class="fa fa-check-square fa-lg" style="color:#7b2b80;"></i>
+		<i class="fa fa-square fa-lg" style="color:#ddd"></i> Loyal Users
+	</span>
+
+    <span ng-click='anotherquery("users")' ng-class="{'active': show_user == true }" class="" ><i class="fa fa-check-square fa-lg" style="color:#f47b1e;  ">
+		</i><i class="fa fa-square fa-lg" style="color:#ddd"></i> High-risk Users
+	</span>  
+	 <span ng-click='anotherquery("Churned")' ng-class="{'active': show_churn == true }" class="" ><i class="fa fa-check-square fa-lg" style="color:#336600;  ">
+		</i><i class="fa fa-square fa-lg" style="color:#ddd"></i>  Churned Users
+	</span>  
+	 <span ng-click='anotherquery("Unengaged")' ng-class="{'active': show_unmerge == true }" class="" ><i class="fa fa-check-square fa-lg" style="color:#660033;  ">
+		</i><i class="fa fa-square fa-lg" style="color:#ddd"></i>  Unengaged Users
+	</span>  
+	 <span ng-class="{'active': show_installs== true}" ng-click='anotherquery("installsquery")' class="installs" >
+            <i class="fa fa-check-square fa-lg" style="color:#b2bb20; "></i>
+			<i class="fa fa-square fa-lg" style="color:#ddd"></i> Total Installs</span> 
+	 <span ng-class="{'active': show_activeuser== true}" ng-click='anotherquery("newuserquery")' class="activeuser" >
+            <i class="fa fa-check-square fa-lg" style="color:#8b0a50;"></i><i class="fa fa-square fa-lg" style="color:#ddd"></i> New User</span>   
+
+		</div>
+</div>
+
+<div class="pull-right btn-group" >
+        <span class="btn btn-default btn-xs" ><i class="fa fa-download" ></i> CSV </span>
+	<span class="btn btn-default btn-xs" ><i class="fa fa-download"></i> PDF </span>
+	<span class="btn btn-default btn-xs" ><i class="fa fa-download"></i> JPEG </span>
+	  
+</div>
+
+
+	<div class='col-lg-12 col-md-12'>
+		<div class='row' ng-show='!groupBy' >
+	<highchart ng-show='!groupBy' id="chart1" config="chartConfig"  ></highchart> 
+	</div>
+</div>
+
+<div ng-show='groupBy'>
+<div class='col-lg-12 col-md-12 '> 
+	<div class='row'  >
+	<highchart ng-show='groupBy' id="chart2"    config="columnchart"></highchart>
+	</div>
+</div>
+
+
+		<div class='col-lg-12 text-center'   >
+            <paging class="small"
+
+                  page="page_set" 
+                  page-size="10" 
+                  total="last_page"
+                  show-prev-next="true"
+                  
+                  ul-class="pagination">
+            </paging> 
+        	
+        </div>
+
+
+<div class='col-lg-12 col-md-12'> 
+	<div class='row'  >
+<!--	<h3 class=custom-title></h3>-->
+	<table  datatable id='example' class="table table-striped table-bordered  table-hover display">
+
+		<thead>
+
+			<tr>
+				<th style="width:50%">Group By {{groupbyvalue}}</th>
+
+				<th style="width:50%">{{current}} </th>
+
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr ng-repeat="i in tablecontent.result.values track by $index">
+				<td data-value='{{i[1]}} ' data-key="{{i[0]}}">{{i[0]}}
+
+				</td>
+
+				<td data-key="{{i[0]}}" data-value='{{i[1]}} '>{{i[1]}}
+				</td>
+
+			</tr>
+		</tbody>
+
+	</table>
+	</div>
+</div>
+</div>
+
+	

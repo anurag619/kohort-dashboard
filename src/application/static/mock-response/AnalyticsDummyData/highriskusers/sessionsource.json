@@ -1,0 +1,44 @@
+{
+  "result": {
+    "pages": 1.0, 
+    "values": [
+      [
+        "Organic", 
+        2903114
+      ], 
+      [
+        "Twitter Ads", 
+        2721246
+      ], 
+      [
+        "Facebook", 
+        2713102
+      ], 
+      [
+        "Chartboost", 
+        2681886
+      ], 
+      [
+        "Vserv", 
+        2422655
+      ], 
+      [
+        "Flurry", 
+        2361580
+      ], 
+      [
+        "Admoda", 
+        2244858
+      ], 
+      [
+        "Inmobi", 
+        1849904
+      ], 
+      [
+        "Admob", 
+        1110214
+      ]
+    ]
+  }, 
+  "status": "success"
+}

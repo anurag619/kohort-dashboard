@@ -1,0 +1,4 @@
+{
+	"devices":[{"conversion": 89, "name": "Nexus 5", "users": 19079}, {"conversion": 53, "name": "Galaxy II", "users": 13715}, {"conversion": 76, "name": "Moto E", "users": 16347}, {"conversion": 86, "name": "Moto X", "users": 11269}, {"conversion": 97, "name": "Micromax", "users": 18476}, {"conversion": 93, "name": "Moto E", "users": 14363}, {"conversion": 75, "name": "LG  G3", "users": 18647}, {"conversion": 68, "name": "Nokia X", "users": 10566}, {"conversion": 55, "name": "HTC One", "users": 19038}],
+	"avg_conversion":80
+}

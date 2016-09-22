@@ -1,0 +1,32 @@
+{
+  "result": {
+    "pages": 1.0, 
+    "values": [
+      [
+        "moto g", 
+        9002506
+      ], 
+      [
+        "nexus 4", 
+        3432434
+      ], 
+      [
+        "moto x", 
+        3367287
+      ], 
+      [
+        "samsung duos", 
+        2813537
+      ], 
+      [
+        "nokia lumia", 
+        1263581
+      ], 
+      [
+        "samsung galaxy", 
+        1129215
+      ]
+    ]
+  }, 
+  "status": "success"
+}

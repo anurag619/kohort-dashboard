@@ -1,0 +1,41 @@
+[
+  {
+    "app_list": [
+      {
+        "app_name":"Ola cabs",
+        "apikey":"sdsdsd786as8das8d6as8d6as8d6",
+        "googleevents":true,
+        "event":"I already use Google Analytics",
+        "fbevent":false
+      },
+       {
+        "app_name":"flipkart",
+        "apikey":"sdsdsd786as8das8d6as8d6as8d6",
+        "googleevents":false,
+        "fbevent":true
+        },
+       {
+        "app_name":"zomato",
+        "apikey":"sdsdsd786as8das8d6as8d6as8d6",
+        "googleevents":false,
+        "fbevent":true
+         
+      },
+       {
+        "app_name":"carwale",
+        "apikey":"sdsdsd786as8das8d6as8d6as8d6",
+        "googleevents":true,
+        "eventname":"ga_event",
+        "event":"I already use Google Analytics",
+        "fbevent":true
+      },
+       {
+        "app_name":"heptic",
+        "apikey":"sdsdsd786as8das8d6as8d6as8d6",
+        "googleevents":false,
+        "fbevent":false
+        
+      }
+    ] 
+  }
+]

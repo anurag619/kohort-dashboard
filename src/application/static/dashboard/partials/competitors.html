@@ -1,0 +1,129 @@
+
+
+<h1 ng-show="competitors.length>0 && compToShow"><i class="fa fa-suitcase fa-lg"></i> Competitors 
+
+	<!-- <button ng-click="compModal()" class="btn btn-warning btn-sm" style="margin:-11px 0 -10px 0"><i class="fa fa-plus"></i> Add/Delete Competitors </button> -->
+</h1>
+<div class="alert alert-danger" ng-show="api_error_comp"  id="success-alert-btn-comp">
+                     
+Error in Loading Data
+</div>
+
+
+<div ng-hide="compToShow">
+  <h1><i class="fa fa-suitcase fa-lg"></i> Add Competitors </h1>
+
+    <div class='col-lg-6 col-md-6'>
+              
+      <form name="appForm" ng-class="{true: 'error'}[submitted && appForm.competitor_name.$invalid]" novalidate ng-submit="submit()" class="form-inline" role="form">
+          <div class="form-group">           
+              <div class="input-group">
+                                             
+                  <input typeahead="item for item in comp_query($viewValue)" typeahead-wait-ms="400" placeholder="Competitor Name" id="comp_name" name="competitor_name" ng-model="comp_name" class="form-control input-sm"> 
+
+                  <span class="input-group-btn">
+                <button ng-click="addcompetitor(selected); submitted=true" type="submit" class="btn btn-warning btn-sm">Add</button>
+              </span>
+          </div>
+
+            <div style="margin-top: 10px;" class="alert alert-danger" ng-show="comp_error" id="comp-alert"> Need to add a <strong>name</strong>
+            </div>
+
+                <!-- <div ng-show="appForm.competitor_name.$error.required" role="alert alert-danger">
+                <span class="error" >
+                 Required!</span>
+              </div>   --> 
+          </div>
+      </form>
+          <table class="table table-bordered table-striped table-hover table-condensed" style="margin:15px 0 0 0" >
+             <tr ng-show='competitors.length>0'><th>Competitor Name</th><th></th></tr>
+
+             <tr ng-repeat='i in competitors'>
+                  <td>{{i}}</td>
+                  <td>
+                      <button ng-click='delComp($event)' data-val='{{i}}' class="btn btn-default btn-sm"><i class="fa fa-times"></i>Delete</button>
+                  </td>
+              </tr>
+              
+          </table>
+    </div>
+</div>
+ 
+ 
+<div ng-hide="competitors.length>0" ng-cloak>
+    
+    <p>              
+       You haven't added any competitor so far. Click on button below
+    </p>
+ 
+    <p><button ng-click="compModal()"  class="btn btn-warning"><i class="fa fa-plus"></i> Add Competitor</button> </p>
+        </div>
+        </section>
+    </div>
+ 
+</div>
+
+<div ng-show="competitors.length>0 && compToShow">
+	    <div class="pull-right btn-group" style="margin-top:0px; margin-bottom:15px;">
+        <span class="btn btn-default btn-xs" ng-click="compCSVConvert()"><i class="fa fa-download" ></i> CSV </span>
+        <span class="btn btn-default btn-xs" ng-click="compPDFConvert()" ><i class="fa fa-download"></i> PDF </span>
+        <span class="btn btn-default btn-xs"  ng-click="compPNGConvert()"><i class="fa fa-download"></i> JPEG </span>
+ 
+      </div>
+	
+      <div class='col-lg-12 col-md-12'  ng-show='!groupBy'>
+  		  <div class="row">
+          <highchart id="compchart"  config="compchart"></highchart>
+  		  </div>
+  		</div>
+  		
+  		<div ng-show='groupBy'>        
+  			
+  			<div class="col-lg-12 col-md-12">
+  				<div class="row">
+            <highchart id="compchart1" config="compchart1" ></highchart> 
+  			  </div>
+  		  </div>
+      </div>
+
+  		<div class='col-lg-12 text-center'>
+
+          <paging class="small"
+
+              page="page_set" 
+              page-size="1" 
+              total="last_page"
+              show-prev-next="true"
+              ul-class="pagination"
+              >
+          </paging>       
+      </div>
+  		
+  		<div class="col-lg-12 col-md-12">
+  				<div class="row">
+  			      <div style="overflow-x:auto">
+
+                  <table cellspacing="0" id='example' class="table display table-striped table-bordered table-hover" width=100%>         
+                    <thead>      
+                      <tr >             
+                        <th ng-repeat='j in comps'>
+                          <span>{{j}}</span></th>
+
+                      </tr>     
+                      <!--   {{assign}} -->
+                    </thead>
+                    <tbody >
+                      <tr ng-repeat='i in comptable["categories"] track by $index' data-value='{{assign[$index]}}' data-key='{{i}}'>
+                        <td >{{i}}</td>
+                        <td ng-repeat="q in assign[$index] track by $index" >{{q}}
+                        </td> 
+                                  
+                      </tr>                       
+                     </tbody>
+                  </table>
+  				    </div> 
+  		</div>
+</div>
+	
+      
+

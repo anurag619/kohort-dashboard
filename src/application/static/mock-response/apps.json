@@ -1,0 +1,9 @@
+{
+  "apps": [
+    "{\"_id\": \"aebf93c63441472c44cdfedf3f25fc023\", \"name\": \"Demo\", \"data\": {}, \"competitors_available\": true}", 
+    "{\"_id\": \"aec717feddc92d2056d9c5d7c585bc271\", \"name\": \"Betaglide Test App\", \"data\": {}, \"competitors_available\": false}", 
+    "{\"_id\": \"a8f2687050d6a8e55884430c72cda2ae0\", \"name\": \"TouchTalent\", \"data\": {}, \"competitors_available\": false}", 
+    "{\"_id\": \"ae43e22c0f3aea676bee8322eda9c980e\", \"name\": \"Touchtalent\", \"data\": {}, \"competitors_available\": false}", 
+    "{\"_id\": \"a6c838dbdddde2d182cc24294b121d2cb\", \"name\": \"test\", \"data\": {}, \"competitors_available\": false}"
+  ]
+}

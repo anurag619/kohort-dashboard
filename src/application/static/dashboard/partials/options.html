@@ -1,0 +1,156 @@
+
+
+<div class="col-lg-12" style="padding:15px;">
+
+	<div class="row segments-container" style="backgroubd:#e9eaed">
+
+		<!-- segments -->
+		<div ng-show="filter_show1" class="col-lg-3" >
+			<div class="row ">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="panel mini-box">Segment
+							<br>
+							<h3 style="margin:0;">{{seg_applied}}</h3>
+
+							<div class="pull-right dropdown">
+								<button ng-disabled="segmentShow" id="drop5" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+									<span class="caret"></span>
+								</button>
+
+								<ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+										<li><a ng-click="initialize('showsegments')"><i class="fa fa-plus" style="margin-right:5px;"></i>Add new segment</a>
+									</li>
+									<li ng-repeat="s in segments" role="presentation">
+										<a ng-click="switchSegments(s)" role="menuitem">
+											<i class="fa fa-check hide "></i>{{s.name}}</a>
+										<a ng-click="editSegments(s)" class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--  groupby -->
+		<div class="col-lg-3" ng-show="showgroup">
+			<div class="row">
+			<div class="panel mini-box" >
+				<div class="  dropdown" > 
+					<div>
+					Group By							
+						<br>
+						<h3 style="margin:0;">{{groupbyvalue}} <i ng-class="map_icon(currentGroup)" style="margin-right:15px;"></i></h3>
+					</div>
+					<button ng-disabled="segmentShow" id="drop4" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+						
+						<span class="caret"></span>
+					</button>
+
+					<ul id="menu1" class="menu-group-by dropdown-menu" role="menu" aria-labelledby="drop4">
+						<li><a type="button" ng-click='filter_groups($event)' data-value='date'><i class="fa fa-check" ng-show="groupVal == 'date' "></i>Date <i class="fa fa-calendar pull-right"></i></a>
+						</li>
+						
+						<li class="divider-text"> User </li>
+						<li class="is-child"><a type="button" ng-click='filter_groups($event)' data-value="aqua">
+						<i class="fa fa-check" ng-show="groupVal == 'campaign' || groupVal == 'source'"></i> Acquisition <i class="fa fa-users pull-right"></i> </a></li>
+
+						<li class="is-child"  ><a type="button" ng-click='filter_groups($event)' data-target='' data-value="engage"><i class="fa fa-check" ng-show="groupVal == 'total_pushnotification_events' || groupVal == 'session_count' || groupVal == 'total_session_duration' || groupVal == 'avg_session_duration' " ></i>Engagement <i class="fa fa-heart pull-right"></i></a></li>
+
+						<li class="is-child"><a type="button" ng-click='filter_groups($event)' data-value='total_event_count' data-target=''><i class="fa fa-check" ng-show="groupVal == 'total_event_count' "></i>Events<i class="fa fa-filter pull-right"></i></a>
+						</li>
+
+						<li ><a type="button" ng-click='filter_groups($event)' data-value='total_crashes'><i class="fa fa-check" ng-show="groupVal == 'total_crashes' "></i>Crashes <i class="fa fa-warning pull-right"></i></a>
+						</li>
+
+						<li><a type="button" ng-click='filter_groups($event)' data-value='app_version' data-target=''><i class="fa fa-check" ng-show="groupVal == 'app_version' "></i> App Version <i class="fa fa-file-text pull-right" ></i></a></li>
+
+						<li ng-show="current!='competitors' "><a type="button" data-value='competitors' ng-click='filter_groups($event)'><i class="fa fa-check" ng-show="groupVal == 'competitors' "></i>Competitors<i class="fa fa-briefcase pull-right"></i></a>
+						</li>
+
+						<li><a type="button" ng-click='filter_groups($event)' data-target='' data-value="location"><i class="fa fa-check" ng-show="groupVal == 'location_city' || groupVal == 'location_country' "></i> Location <i class="fa fa-map-marker fa-lg pull-right"></i></a></li>
+
+						<li  ><a type="button" ng-click='filter_groups($event)' data-target='' data-value="perform"><i class="fa fa-check" ng-show="groupVal == 'total_anr' || groupVal == 'total_onLow_memory' "></i>Performance <i class="fa fa-line-chart pull-right"></i></a></li>
+
+						<li class="divider-text"> Device  </li>
+						<li class="is-child"  ><a data-value='avg_internal_space_left' ng-click='filter_groups($event)'><i class="fa fa-check" ng-show="groupVal == 'avg_internal_space_left' "></i> Space Left <i class="glyphicon glyphicon-hdd pull-right" ></i> </a></li>
+
+						<li class="is-child"><a ng-class="{'active':currentGroup == 'os'}" ng-click='filter_groups($event)' data-value='os' data-target=''><i class="fa fa-check" ng-show="groupVal == 'os' "></i> OS <i class="fa fa-life-ring pull-right"></i></a></li>
+
+						<li class="is-child"  ><a ng-click='filter_groups($event)' data-value='device_model'><i class="fa fa-check" ng-show="groupVal == 'device_model' "></i>Model <i class="glyphicon glyphicon-phone pull-right"></i></a>
+						</li>
+
+						<li class="is-child"  ><a type="button" ng-class="{'active':currentGroup == 'screen'}" ng-click='filter_groups($event)' data-target='' data-value="screen"><i class="fa fa-check" ng-show="groupVal == 'device_screen_aspect' || groupVal == 'device_screen_density' || groupVal == 'device_screen_size' "></i>
+            			 Screen<i class="fa fa-arrows-alt pull-right"></i>
+            		  </a>
+						</li>
+
+						<!-- <li  ><a type="button" ng-click='filter_groups($event)' data-value='device_mem'><i class="fa fa-check" ng-show="groupVal == 'device_mem' "></i>Memory<i class="icon-ram pull-right"></i></a>
+						</li> -->
+
+						<li><a type="button" ng-class="{'active':currentGroup == 'network'}" ng-click='filter_groups($event)' data-target='' data-value="network"><i class="fa fa-check" ng-show="groupVal == 'network_carrier' || groupVal == 'network_ntype' "></i>Network<i class="icon-networksignalalt pull-right"></i></a></li>
+ 
+					</ul>
+				</div>
+
+				 
+			</div>
+			</div>
+		</div>
+
+		<!-- child groupby -->
+		<div ng-show="child_show" class="col-lg-3">
+			<div class="row">
+			<div class="panel mini-box">
+
+                <!-- <form ng-show="event_text" ng-submit="send_event(event_name)" ng-show="histo_show">Event Name
+
+                    <input ng-model="event_name" type="text" class="form-control input-sm" style=" width: 80%" typeahead="item for item in all_events | filter:$viewValue" placeholder="Enter Values" name="allevents" type="text" value="{{event_name}}" />
+                </form> -->
+                
+				<div ng-show="child_show" class="dropdown">Type
+					<br>
+					<h3 style="margin:0;">{{first_child}}</h3>
+					<button id="drop5" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+						
+						<span class="caret"></span>
+					</button>
+
+					<ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+						<li ng-repeat="child in child_group">
+							<a type="button" ng-click='process_group($event)' data-value='{{child}}' role="menuitem"><i ng-show="first_child== child" class="fa fa-check"></i>{{child}} </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		    </div>
+		</div>
+	</div>
+
+	<section class="panel panel-default">
+		<div class="panel-body">
+
+			<div style="padding-top:1px;">
+
+				<form ng-submit="bucket_size_change(bucket_size)" ng-show="histo_show" style="margin-left: 10px; margin-top: -7px;" class="pull-right form-inline">Buckets Size
+
+					<input ng-model="bucket_size" type="text" class="form-control input-sm" style="margin-left:5px; width: 70px" value="{{bucket_size}}" />
+				</form>
+
+				<form ng-submit="bucket_change(bucket_numb)" ng-show="histo_show" style="margin-left: 10px; margin-top: -7px;" class="pull-right form-inline">Number of Buckets
+
+					<input ng-model="bucket_numb" type="text" class="form-control input-sm" style="margin-left:5px; width: 70px" value="{{bucket_numb}}" />
+				</form>
+			</div>
+
+			<ui-view></ui-view>
+		</div>
+	</section>
+</div>
+
+
+
+
+ 

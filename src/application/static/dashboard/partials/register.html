@@ -1,0 +1,490 @@
+<style>
+
+.panel-heading .btn {
+  position: absolute;
+  right: 19px;
+  top: 4px;
+}
+	
+</style>
+<div class="col-lg-8">
+<section class="panel panel-default">
+                <div class="panel-heading"><strong><span class="fa fa-exchange"></span>
+					<span data-i18n="Data">Re-target</span></strong>
+					<button class="btn btn-primary"><i class="fa fa-plus"></i> New Re-target</button>
+	 
+	</div>                
+					<div class="panel-body">
+					<div class="row">
+					<div class="col-lg-12">
+						<table class="table table-hover table-striped">
+					<tr>
+						<th class="col-lg-3">Segment Name</th>
+						<th class="col-lg-3">Audience</th>
+						<th class="col-lg-2">Re-install</th>
+						<th class="col-lg-2">Performance</th>
+						<th class="col-lg-2"></th>
+					</tr>
+						
+					<tr>
+						<td class="col-lg-3">Segment Name</td>
+						<td class="col-lg-3">00000000</td>
+						<td class="col-lg-2">00000000</td>
+						<td class="col-lg-2">Libe Chart</td>
+						<td class="col-lg-2 text-center"><button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button></td>
+							</tr>
+							<tr>
+						<td class="col-lg-3">Segment Name</td>
+						<td class="col-lg-3">00000000</td>
+						<td class="col-lg-2">00000000</td>
+						<td class="col-lg-2">Libe Chart</td>
+						<td class="col-lg-2 text-center"><button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button></td>
+							</tr>
+							<tr>
+						<td class="col-lg-3">Segment Name</td>
+						<td class="col-lg-3">00000000</td>
+						<td class="col-lg-2">00000000</td>
+						<td class="col-lg-2">Libe Chart</td>
+						<td class="col-lg-2 text-center"><button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button></td>
+							</tr>
+							
+							
+					</table> 
+						
+					</div>
+					 	 
+					</div>
+                </div>
+             </section>
+</div>
+
+<div class="col-lg-4">
+	
+<section class="panel panel-default">
+                <div class="panel-heading"><strong><span class="fa fa-users"></span>
+					<span data-i18n="Data">Audience</span></strong>
+					<button class="btn btn-primary"><i class="fa fa-plus"></i> Create New Audience</button>
+	 
+	</div>                
+					<div class="panel-body">
+						<div class="row">
+						<div class="col-lg-4 text-center">
+						<span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x" style="color:#eee"></i>
+  <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+</span>
+						00000000
+						</div>
+							<div class="col-lg-4 text-center">
+						<span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x" style="color:#eee"></i>
+  <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+</span>
+						00000000
+						</div>
+							<div class="col-lg-4 text-center">
+						<span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x" style="color:#eee"></i>
+  <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+</span>
+						00000000
+						</div>
+							<div class="col-lg-4 text-center">
+						<span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x" style="color:#eee"></i>
+  <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+</span>
+						00000000
+						</div>
+							<div class="col-lg-4 text-center">
+						<span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x" style="color:#eee"></i>
+  <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+</span>
+						00000000
+						</div>
+						</div></div>
+	</section>
+	</div>
+
+<!--<style>
+	.stepwizard-step p {
+		margin-top: 10px;
+	}
+	
+	.stepwizard-row {
+		display: table-row;
+	}
+	
+	.stepwizard {
+		display: table;
+		width: 100%;
+		position: relative;
+	}
+	
+	.stepwizard-step button[disabled] {
+		opacity: 1 !important;
+		filter: alpha(opacity=100) !important;
+	}
+	
+	.stepwizard-row:before {
+		top: 14px;
+		bottom: 0;
+		position: absolute;
+		content: " ";
+		width: 100%;
+		height: 1px;
+		background-color: #ccc;
+		z-order: 0;
+	}
+	
+	.stepwizard-step {
+		display: table-cell;
+		text-align: center;
+		position: relative;
+		width: 16.5%;
+	}
+	
+	.btn-circle {
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		padding: 6px 0;
+		font-size: 12px;
+		line-height: 1.428571429;
+		border-radius: 15px;
+	}
+	
+	.page-signin .signin-body,
+	.page-signin .signup-body,
+	.page-signup .signin-body,
+	.page-signup .signup-body {
+		border-top: 0px none;
+	}
+	
+	.page-signin .line-thru:before,
+	.page-signup .line-thru:before {
+		background-color: #fff;
+		text-align: center;
+		width: 60px;
+		margin: -5px 0 0 -31px;
+	}
+</style>
+
+<script>
+	$(document).ready(function () {
+
+		var navListItems = $('div.setup-panel div a'),
+			allWells = $('.setup-content'),
+			allNextBtn = $('.nextBtn');
+
+		allWells.hide();
+
+		navListItems.click(function (e) {
+			e.preventDefault();
+			var $target = $($(this).attr('href')),
+				$item = $(this);
+
+			if (!$item.hasClass('disabled')) {
+				navListItems.removeClass('btn-primary').addClass('btn-default');
+				$item.addClass('btn-primary');
+				allWells.hide();
+				$target.show();
+				$target.find('input:eq(0)').focus();
+			}
+		});
+
+		allNextBtn.click(function () {
+			var curStep = $(this).closest(".setup-content"),
+				curStepBtn = curStep.attr("id"),
+				nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+				curInputs = curStep.find("input[type='text'],input[type='url']"),
+				isValid = true;
+
+			$(".form-group").removeClass("has-error");
+			for (var i = 0; i < curInputs.length; i++) {
+				if (!curInputs[i].validity.valid) {
+					isValid = false;
+					$(curInputs[i]).closest(".form-group").addClass("has-error");
+				}
+			}
+
+			if (isValid)
+				nextStepWizard.removeAttr('disabled').trigger('click');
+		});
+
+		$('div.setup-panel div a.btn-primary').trigger('click');
+	});
+</script>
+
+
+<div class="col-lg-12">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">App Setup Wizard</h3>
+		</div>
+		<div class="panel-body">
+
+			<div class="stepwizard">
+				<div class="stepwizard-row setup-panel">
+					<div class="stepwizard-step">
+						<a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+						<p>Sign Up</p>
+					</div>
+					<div class="stepwizard-step">
+						<a href="#step-2" type="button" class="btn btn-default btn-circle">2</a>
+						<p>App Details</p>
+					</div>
+					<div class="stepwizard-step">
+						<a href="#step-3" type="button" class="btn btn-default btn-circle">3</a>
+						<p>Features</p>
+					</div>
+					<div class="stepwizard-step">
+						<a href="#step-4" type="button" class="btn btn-default btn-circle">4</a>
+						<p>Integration Details</p>
+					</div>
+
+					<div class="stepwizard-step">
+						<a href="#step-5" type="button" class="btn btn-default btn-circle">6</a>
+						<p>API Docs</p>
+					</div>
+
+					<div class="stepwizard-step">
+						<a href="#step-6" type="button" class="btn btn-default btn-circle">5</a>
+						<p>Test</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-12">
+			<div class="row setup-content" id="step-1">
+				 
+						<div class="page-signup">
+
+							<div class="signup-body">
+								<div class="container">
+									<div class="form-container">
+
+										<section class="row signin-social text-center">
+											<a href="javascript:;" class="btn btn-default  btn-gplus">
+												<i class="fa fa-google-plus"></i>Sign Up With Google</a>
+										</section>
+
+										<span class="line-thru">OR</span>
+
+										<section>
+
+
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+                                    					<span class="glyphicon glyphicon-envelope"></span>
+													</span>
+													<input type="email" class="form-control" placeholder="Your email">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+                                    					<span class="glyphicon glyphicon-lock"></span>
+													</span>
+													<input type="password" class="form-control" placeholder="Password">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+                                    					<span class="glyphicon glyphicon-user"></span>
+													</span>
+													<input type="text" class="form-control" placeholder="Your name">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+                                    					<span class="glyphicon glyphicon-user"></span>
+													</span>
+													<input type="text" class="form-control" placeholder="Company name">
+												</div>
+											</div>
+
+											<div class="form-group">
+
+												<div class="divider"></div>
+												<a href="#/" class="btn btn-primary  btn-block">Sign up</a>
+											</div>
+
+
+										</section>
+
+										<section>
+											<p class="text-center text-muted">Already have an account? <a href="#/pages/signin">Log in now</a>
+											</p>
+										</section>
+
+									</div>
+								</div>
+							</div>
+						</div>
+ 
+			</div>
+			<div class="row setup-content" id="step-2">
+				 
+						<div class="page-signup">
+
+							<div class="signup-body">
+								<div class="container">
+									<div class="form-container">
+										<section>
+											<div class="form-group">
+
+												<div class="input-group">
+
+													<span class="input-group-addon">
+                                    					<span class="fa fa-mobile-phone fa-lg"></span>
+													</span>
+													<input type="email" class="form-control" placeholder="Your app name">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="checkbox">
+													<label>
+														<input type="radio" name="os" checked> Android
+													</label>
+													<label>
+														<input type="radio" name="os"> IOS
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+                                    					<span class="fa fa-android fa-lg"></span>
+													</span>
+													<input type="password" class="form-control" placeholder="Play store link">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+                                    					<span class="fa fa-gamepad"></span>
+													</span>
+													<input type="text" class="form-control" placeholder="App Category">
+												</div>
+											</div>
+
+										</section>
+										<span class="row line-thru">API Key</span>
+										<h3 class="text-center">APPKEYVDVNHFJGU75564NL</h3>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+					 
+			</div>
+			<div class="row setup-content" id="step-3">
+				 
+						<div class="page-signup">
+
+							<div class="signup-body">
+								<div class="container">
+									<div class="form-container"> 
+										<section> 
+											<div class="form-group">
+												<label>Acquisition Channel</label>
+												<div class="checkbox">
+													<label>
+														<input type="radio" name="os"> Google Analytics
+													</label>
+													<label>
+														<input type="radio" name="os"> Other
+													</label>
+
+												</div>
+											</div>
+											<div class="form-group">
+												<label>Events</label>
+												<div class="checkbox">
+													<label>
+														<input type="radio" name="os"> Google Analytics
+													</label>
+													<label>
+														<input type="radio" name="os"> Other
+													</label>
+
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label>Targetting</label>
+												<div class="checkbox">
+													<label>
+														<input type="radio" name="os"> Facebook
+													</label>
+													<label>
+														<input type="radio" name="os"> Other
+													</label>
+
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label>Competitors</label>
+												<select class="form-control">
+													<option selected>
+														Select competitor
+													</option>
+												</select>
+											</div>
+										</section>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+					 
+			</div>
+			<div class="row setup-content" id="step-4">
+				<div class="page-signup">
+
+							<div class="signup-body">
+								<div class="container">
+									<div class="form-container"> 
+										<section> 
+				<div class="form-group">
+												<label>IDE </label>
+												<div class="checkbox">
+													<label>
+														<input type="radio" name="os"> Eclipse
+													</label>
+													<label>
+														<input type="radio" name="os"> Android Studio
+													</label>
+
+												</div>
+											</div>
+										</section></div></div></div></div>
+				 
+						<button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+					 
+			</div>
+			<div class="row setup-content" id="step-5">
+				 
+						<button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+					 
+			</div>
+			<div class="row setup-content" id="step-6">
+				 
+						<button class="btn btn-success pull-right" type="submit">Finish!</button>
+					 
+			</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+-->

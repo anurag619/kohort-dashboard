@@ -1,0 +1,40 @@
+{
+
+  "data": [
+    {
+      "_id": "0", 
+      "name": "All Users", 
+      "rules": [[]]
+    }, 
+    {
+      "_id": "1", 
+      "name": "Uninstalls", 
+      "rules": 
+      [
+
+          [{"key": "uninstall", "id":0, "operator": "null", "value": "true", "parent":"Uninstall"}]
+      ]
+    },
+
+    {
+      "_id": "2", 
+      "name": "Custom Segment", 
+      "rules": 
+      [
+
+          [ {"key": "device_mem","id":0, "numvals": ["Less Than","Greater Than","equals"], "value": "1024", "val": "1024", "unit" :"MB","operator":"lt", "int_seg": "true", "segmentList": ["128" ], "parent":"Device Params","rule":"or"}, 
+            {"key": "device_model", "id":1,"numvals": ["equals"] ,"val": "1024", "val": "Samsung", "operator":"eq","int_seg": "false","segmentList": ["MotorolaXT", "LG", "Samsung","Karbon", "Moto G" ], "parent":"Device Params","rule":"or"}
+          ],
+
+          [ {"key": "device_screen_size", "id":2, "numvals": ["equals"], "value": "1024","val": "320x526", "operator":"eq", "int_seg": "false","segmentList": ["320x526","768x320", "450x526","1268x738","1350x1024" ], "parent":"Device Params","rule":"and"},
+            {"key": "device_screen_size", "id":3, "numvals": ["equals"], "value": "1024","val": "768x320", "operator":"eq", "int_seg": "false","segmentList": ["320x526","768x320", "450x526","1268x738","1350x1024" ] , "parent":"Device Params","rule":"or"}
+          ],
+
+          [{"key": "os", "operator":"eq", "id":0, "numvals": ["equals"], "value": "1024","val": "Gingerbread (2.3-2.3.7)", "int_seg": "false", "segmentList": ["Gingerbread (2.3-2.3.7)", "Honeycomb (3.0-3.2.6)", "Ice Cream Sandwich (4.0-4.0.4)", "Jelly Bean (4.1-4.3.1)", "KitKat (4.4-4.4.4)", "Lollipop (5.0)"], "parent":"OS Version","rule":"and"}],
+
+          [{"key": "network_ntype", "id":0,"numvals": ["equals"] , "operator":"eq","value": "1024", "val": "4G", "int_seg": "false","segmentList": ["WiFi","4G", "3G", "2G"], "parent":"Network","rule":"and"}]
+
+      ]
+    }
+  ]
+}

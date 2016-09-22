@@ -1,0 +1,20 @@
+{
+  "result": {
+    "pages": 1.0, 
+    "values": [
+      [
+        "large", 
+        10465600
+      ], 
+      [
+        "small", 
+        7529912
+      ], 
+      [
+        "normal", 
+        3013050
+      ]
+    ]
+  }, 
+  "status": "success"
+} 

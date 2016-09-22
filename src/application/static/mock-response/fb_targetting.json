@@ -1,0 +1,75 @@
+{
+  "segment": [
+    {
+      "_id": "0", 
+      "name": "All Users", 
+      "rules": [],
+      "data":123456
+    }, 
+    {
+      "_id": "1", 
+      "name": "Uninstalls", 
+      "rules": 
+      [
+          [{"key": "uninstall",  "value": "true", "parent":"Uninstall"}]
+      ],
+      "data":345678
+      
+    },
+
+    {
+      "_id": "2", 
+      "name": "Custom Segment", 
+      "rules": [],
+      "data":523698
+    },
+    {
+      "_id": "3", 
+      "name": "Only Competitors", 
+      "rules": [],
+      "data":123456
+    }, 
+    {
+      "_id": "4", 
+      "name": "Samsung Device Only", 
+      "rules": [],
+      "data":123456
+    }, 
+    {
+      "_id": "5", 
+      "name": "Location", 
+      "rules": [],
+      "data":123456
+    }, 
+    {
+      "_id": "6", 
+      "name": "Check Crash", 
+      "rules": [],
+      "data":123456
+    }, 
+    {
+      "_id": "7", 
+      "name": "Check Uninstall", 
+      "rules": [],
+      "data":123456
+    }, 
+    {
+      "_id": "8", 
+      "name": "My Fav", 
+      "rules": [],
+      "data":123456
+    }, 
+    {
+      "_id": "9", 
+      "name": "Ram and Memory", 
+      "rules": [],
+      "data":123456
+    }, 
+    {
+      "_id": "10", 
+      "name": "Scrren Sizes", 
+      "rules": [],
+      "data":123456
+    } 
+  ]
+}

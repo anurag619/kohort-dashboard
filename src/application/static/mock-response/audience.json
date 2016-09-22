@@ -1,0 +1,37 @@
+{
+
+  "data": [
+    {
+      "_id": "0", 
+      "name": "All Users", 
+      "rules": []
+    }, 
+    {
+      "_id": "1", 
+      "name": "Uninstalls", 
+      "rules": 
+      [
+
+          [{"key": "uninstall", "id":0, "operator": "null", "value": "true", "parent":"Uninstall"}]
+      ]
+    },
+
+    {
+      "_id": "2", 
+      "name": "Custom Audience", 
+      "rules": 
+      [
+
+          [ {"key": "device_mem","id":0,  "value": "1024", "unit" :"MB","ops":"lt", "parent":"Device Params","rule":"or"}
+          ],
+
+          [ {"key": "device_screen_size", "id":2, "value": "320x526", "ops":"lt", "parent":"Device Params","rule":"and"},
+            {"key": "device_screen_size", "id":3, "value": "768x320", "ops":"gt", "parent":"Device Params","rule":"or"}
+          ],
+
+          [{"key": "network_ntype", "id":0, "ops":"eq", "value": "4G", "parent":"Network","rule":"and"}]
+
+      ]
+    }
+  ]
+}

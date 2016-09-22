@@ -1,0 +1,426 @@
+
+body, html{
+	height:100%;
+	font-family:sans-serif;
+}
+
+a, a:hover, .navbar-default .navbar-nav>li>a  {
+	text-decoration:none;
+	color:#4F6174;
+}
+#target{
+background: #EDF3FB;
+padding: 20px;
+}
+a:hover, .navbar-default .navbar-nav>li>a:hover, a.btn:hover{
+color:#3480B8;
+}
+.noapp{
+	text-align: center;
+font-size: 25px;
+width: 100%;
+height: inherit;
+background: #3E4D5D;
+font-weight: 700;
+color: #fff;
+font-family: OpenSans;
+line-height: 100px;
+}
+.noapp ol li{
+   display:block;
+}
+
+.navbar{
+	margin-bottom:0px;
+}
+
+.navbar-brand{
+	font-size:24px;
+	color:#343434 !important;
+}
+.navbar-brand span{
+color:#4F6174;
+}
+
+
+.link-active{
+background: #4F6174;
+margin-bottom: -1px;
+}
+
+.link-active a, .link-active a:hover{
+	color:#fff;
+}
+
+
+.pageId{
+	display:inline-block;
+	font-family: OpenSans;
+font-size: 16px;
+color: #4F6174;
+line-height: 22px;		
+}
+
+.pageId a{
+	padding: 10px 10px 10px 35px;
+	position:relative;	
+}
+
+.main-content{
+	border-left: 1px solid #BACFE9;	
+}
+
+i {
+font-size: 1.8em;
+}
+#graphHeader{
+	font-family: OpenSans;
+font-size: 16px;
+color: #4F6174;
+line-height: 22px;
+}
+.tabs i {
+position: absolute;
+left: 10px;
+top: 50%;
+margin-top: -17px;
+}
+
+.show-pointer a{
+	display:block;
+	overflow:hidden;
+}
+
+ #goalsList{
+	background: #3E4D5D;
+
+}
+#devicesDiv{
+	background: #F6FAFF;
+}
+
+#goalsList p{
+	margin:12px 7px;
+	font-weight:700;
+	color: #fff;
+	font-family: OpenSans;
+font-size: 16px;
+line-height: 22px;
+}
+
+#devicesDiv p{
+	margin:12px 6px 12px 40px;
+}
+#goalHeader p{
+	font-weight: 700;
+color: #fff;
+font-family: OpenSans;
+font-size: 16px;
+line-height: 22px;
+float:left;
+margin-left: 22px;
+}
+#goalsList p.conversion, #devicesDiv p.device-conversion   {
+margin-top: -13px;
+font-size: 12px;
+font-weight:normal;
+}
+.show-pointer.active{
+	background: #8BACC4 !important;
+	margin-bottom: 5px;
+	
+}
+.show-pointer.active a, 
+.show-pointer a.active:hover,
+.goal p{
+	color:#fff;
+}
+#goalsList .show-pointer, 
+{	
+	cursor: pointer;
+	overflow:hidden;
+	position:relative;
+	border-bottom: 1px solid #3E4D5D;
+	color:#4e97cc;
+	background: #4F6174;	
+}
+#devicesDiv .show-pointer {	
+	cursor: pointer;
+overflow: hidden;
+position: relative;
+background: #EDF3FB;
+font-family: OpenSans;
+color: #4F6174;
+line-height: 22px;	
+}
+
+#goalsList .show-pointer:hover, 
+#devicesDiv .show-pointer:hover {
+color:#3480B8;
+}
+
+
+#devicesDiv .deviceActive .show-pointer, #devicesDiv .deviceActive .show-pointer:hover
+ {
+	color:#8BACC4;
+	}
+	 
+
+#goalsList .ion-chevron-right, #devicesDiv .ion-iphone  {
+position: absolute;
+right: 10px;
+top: 50%;
+margin-top: -16px;
+color: #4F6174;
+font-size:18px;
+}
+
+#devicesDiv .ion-iphone {
+right: auto;
+left: 11px;
+font-size: 48px;
+margin-top: -31px;
+}
+
+#goalsList .show-pointer.active .ion-chevron-right, #devicesDiv .deviceActive .ion-iphone{
+color: #8BACC4;	
+}
+
+#fragmentSelector a{
+	padding: 15px;
+}
+
+#fragmentSelector .link-active {
+background: #7092AA;
+}
+
+
+.event-container {
+background: #f6faff;
+border: 1px solid #4F6174;
+border-radius: 4px;
+padding: 25px 0 10px 0;
+margin-right: -1px;
+
+font-family: OpenSans;
+font-size: 16px;
+color: #4E5F71;
+line-height: 22px;
+
+}
+
+ 
+ .overview-container{
+padding:15px;
+position:relative;
+}
+
+
+.overview-container a.goal>span, .overview-container a.goal>span.active {
+display: inline-block !important;
+padding: 28px 0 26px 0;
+border-radius: 50px;
+border: 3px solid #4F6174;
+width: 82px;
+margin: -15px 0;
+background: #fff;
+position: relative;
+z-index: 1;
+text-align: center;
+line-height: 1;
+font-family: OpenSans-Bold;
+font-size: 13px;
+color: #3E4D5D;
+}
+
+.overview-container a.goal.overall-goal>span{ 
+padding: 22px 0 20px 0;
+}
+
+.overview-container a.goal span span {
+display: block;
+font-size: 12px;
+}
+
+.overview-container a.goal>span:hover,
+.overview-container a.goal>span.active,
+.overview-container a.overall-goal.active>span
+{
+	background:#4F6174;
+	color:#fff;
+	cursor: pointer;	
+}
+
+.overview-container a.overall-goal{
+	display:inline-block !important;
+	position:absolute;
+	right:8px;
+	border-radius:50px;
+	top: 50%;
+	margin-top: -26px;
+}
+
+
+.overview-start, .overview-full, .overview-end {	
+position: absolute;
+right: 46px;
+top: 47px;
+width: 64px;
+}
+
+.overview-start{
+	border-top: 5px solid #4F6174;
+}
+.overview-full{
+border-right: 5px solid #4F6174;
+width: 0px;
+bottom: 47px;
+}
+
+.overview-end {
+border-top: 5px solid #4F6174;
+top:auto;
+bottom: 47px;
+}
+ 
+.active, .deviceActive{
+	background: #8BACC4;
+}
+
+.add-goal i{
+	font-size:inherit;
+}
+
+/*.device-conversion-bar {
+height: 5px;
+background-color: #B9C7CE;
+}
+
+.device-conversion-bar-limit {
+border-right: 1px solid #97a4a9;
+height: 6px;
+margin-top: -6px;
+}*/
+
+.search-input{
+	
+	margin: 5px -10px;
+}
+
+.selection-banner{
+	margin-top:15px;
+	font-family: OpenSans;
+font-size: 16px;
+color: #4F6174;
+line-height: 22px;
+}
+
+
+.nav>li>a {
+padding: 10px 25px;
+margin-top: 3px;
+}
+
+.nav>li i {
+position: absolute;
+left: 0;
+top: 50%;
+margin-top: -12px;
+}
+
+i.glyphicon{
+	font-size: inherit;
+}
+
+
+.to{
+margin: 6px 0px 0px -17px;
+position: relative;
+z-index: 0;
+padding: 0px !important;
+width: 0px;
+}
+
+
+.day.active{
+height: 30px !important;
+width: 31px !important;
+}
+
+
+ul.nav.nav-tabs li.active, 
+.tab-content .tab-pane.active{
+	display:table-cell !important;
+	background:none;	
+}
+
+.img-overlay {
+position: absolute;
+top: 0px;
+}
+
+
+.navbar-default {
+background-color:#fff;
+border-color: #fff;
+}
+
+.img-holder {
+      position: relative;
+ }
+
+.carousel-inner .active{
+background:#fff !important
+}
+
+
+.search-input input{
+width:145px;
+display:inline-block;	
+}
+
+.search-input .btn{
+padding: 4px 8px;
+}
+
+.loader{
+position: absolute;
+background: #000;
+opacity:0.3;
+width: 100%;
+z-index: 99999999;
+height: 100%;
+left:0%;
+}
+
+.loader div {
+position: absolute;
+top: 50%;
+left: 50%;
+background: #fff;
+padding: 10px 21px;
+border-radius: 35px;
+margin-left: -60px;
+margin-top: -20px;
+color: #000;
+} 
+
+.popover-content {
+padding: 11px 30px;
+}
+
+.popover.active {
+background: #fff !important;
+}
+
+
+.param{
+	background: none repeat scroll 0 0 #8BACC4 !important;
+}
+
+.goal, 
+.goal-conv{
+	text-align: center;
+}
+
+/*7092AA */

@@ -1,0 +1,28 @@
+{
+  "result": {
+    "pages": 1.0, 
+    "values": [
+      [
+        "Competitor D", 
+        1606960
+      ], 
+      [
+        "Competitor E", 
+        1554028
+      ], 
+      [
+        "Competitor A", 
+        1567600
+      ], 
+      [
+        "Competitor B", 
+        1453593
+      ], 
+      [
+        "Competitor C", 
+        937845
+      ]
+    ]
+  }, 
+  "status": "success"
+}

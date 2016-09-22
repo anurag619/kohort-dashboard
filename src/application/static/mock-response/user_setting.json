@@ -1,0 +1,70 @@
+{
+  "user_account": 
+    {
+      "firstname": "Sunil", 
+      "email":"sunil@betaglide.com",  
+       "company_name":"retention.ai",
+      "password": "12345",
+      "nationality":"indian"
+    },
+    
+    "integration": 
+    {
+     "event_track": "yes", 
+      "eclipse": "true", 
+      "android studio": "false",
+      "nationality":"indian"
+    },
+    "ga_settings":[
+       {
+        "account_name":"KK SHARMA",
+        "account_id":"QWE246F-1U"
+     },
+    {
+        "app_name":"Twister",
+        "app_id":"SDFDSDF-T"
+    },
+
+ {      "profile_name":"All mobile data",
+        "profile_id" :"123324324"
+        }
+
+      ],
+
+
+ "sdk":[{
+       
+  "ide_integrate":[
+  {
+        "ide":"eclipse",
+        "status":"true"
+  },
+  {
+        "ide":"android",
+        "status":false
+  }
+      
+  ],
+      "api_level":[
+  {
+        "level9":true
+    
+  },
+  {
+    "level14":false
+    
+  }
+      ]
+      
+       
+    }
+    
+    ],
+    "report_issue": 
+      {
+      "name": "Sunil Dutt", 
+      "address": "All Users", 
+      "contact": "9796284223",
+      "nationality":"indian"
+    } 
+}
